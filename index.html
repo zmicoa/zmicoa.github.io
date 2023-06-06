@@ -1,0 +1,27 @@
+<input type="button" value="1" onclick="ggvalue('1')">
+<input type="button" value="2" onclick="ggvalue('2')">
+<input type="button" value="3" onclick="ggvalue('3')"><br>
+<input type="button" value="4" onclick="ggvalue('4')">
+<input type="button" value="5" onclick="ggvalue('5')">
+<input type="button" value="6" onclick="ggvalue('6')"><br>
+<input type="button" value="7" onclick="ggvalue('7')">
+<input type="button" value="8" onclick="ggvalue('8')">
+<input type="button" value="9" onclick="ggvalue('9')"><br>
+<input type="button" value="0" onclick="ggvalue('0')">
+<input type="button" value="+" onclick="ggvalue('+')">
+<input type="button" value="=" onclick="ggvalue1('=')">
+
+<input id="gg">
+
+<script type="text/javascript">
+
+function ggvalue(val){
+// alert(val);
+ document.getElementById("gg").value =  document.getElementById("gg").value + val;
+}
+
+function ggvalue1(val){
+document.getElementById("gg").value = eval(document.getElementById("gg").value);
+}
+
+</script>
